@@ -1,11 +1,10 @@
-const HistoryItme =() => {
-    return(
+const HistoryItme = ({name,value}:any) => {
+    return (
         <>
-            <ul id="list" className="list">     
-                <li className="minus">
-                    Cash <span>-$400</span><button className="delete-btn">x</button>
-                </li>
-            </ul>
+            <li className="minus">
+                {name} <span>-${value}</span><button className="delete-btn">x</button>
+            </li>
+            
         </>
     )
 }
